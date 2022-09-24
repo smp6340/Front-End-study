@@ -13,4 +13,8 @@ export const btn = styled.button`
     height: 5%;
     font-size: 20px;
     margin: 15px;
+    color: white;
+    background-color: #ffaaaa;
+    border-radius: 10px;
+    border-color: white;
 `

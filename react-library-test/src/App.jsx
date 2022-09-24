@@ -26,11 +26,31 @@ function App() {
     })
   }
 
+  const alert_promise2 = () => {
+    swal({
+      title: "정말 삭제하시겠습니까?",
+      text: "삭제하면 다시복구할 수 없습니다!",
+      icon: "warning",
+      button: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if(willDelete) {
+        swal("가상 파일이 정상적으로 삭제되었습니다.", {
+          icon: "success",
+        });
+      } else {
+        swal("가상 파일이 안전합니다!")
+      }
+    });
+  }
+
   return (
     <S.background className="App">
       <S.btn onClick={style_alert}>클릭해보세요!</S.btn>
       <S.btn onClick={alert_option}>클릭해보세요!</S.btn>
       <S.btn onClick={alert_promise}>클릭해보세요!</S.btn>
+      <S.btn onClick={alert_promise2}>클릭해보세요!</S.btn>
     </S.background>
   );
 }
