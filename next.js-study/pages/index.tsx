@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Layout from '../components/Layout/index'
 import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
     <>
-      <Header/>
+      <Layout children={undefined}/>
         <div>
           <Link href={"/about"}>
             <a>소개</a>
