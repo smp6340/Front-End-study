@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/ssr-test.jsx", "pages/search.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/ssr-test.tsx", "pages/search.jsx"],
   "exclude": ["node_modules"]
 }

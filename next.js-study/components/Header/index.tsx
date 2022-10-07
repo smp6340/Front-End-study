@@ -10,6 +10,7 @@ const Header = () => {
             <div>
                 <Link href={"/"}><a style={linkstyle}>홈</a></Link>
                 <Link href={"/about"}><a style={linkstyle}>소개</a></Link>
+                <Link href={"/ssr-test"}><a style={linkstyle}>SSR 테스트</a></Link>
             </div>
         </>
     );
